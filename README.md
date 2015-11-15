@@ -1,5 +1,7 @@
 # Daendels-Road: A Twitter bot to walk through the great post road in Java island
 
+(Inspired from @EarthRoverBot project, http://muffinlabs.com/rover/)
+
 follow on Twitter: @Jalan_Daendels
 
 Background:
