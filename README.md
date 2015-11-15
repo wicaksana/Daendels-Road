@@ -1,14 +1,13 @@
 # Daendels-Road
 ## A Twitter bot to walk through the great post road in Java island
 
-<<<<<<< HEAD
 (Inspired by @EarthRoverBot project, http://muffinlabs.com/rover/)
 
 follow on Twitter: [@Jalan_Daendels](https://twitter.com/Jalan_Daendels)
 
 ![alt text][route_wikipedia]
 
-Description:
+**Description**
 [The great post road](https://en.wikipedia.org/wiki/Great_Post_Road) (more popular as 'Jalan Daendels' in Indonesian) is the name of a road that runs across [Java island](https://en.wikipedia.org/wiki/Java), built during the Dutch colonization in the beginning of 19th century by the reigning governor-general Herman Willem Daendels. It spans more than 1000 km, connecting Anyer in the west to Panarukan in the east. The construction took thousands lives of the local labors due to the harsh condition and the brutality from the colonials.
 
 The road was intended to serve as military road and to transport postal services. Over the time, people used it as the main access to travel across Java, and many cities ware developed along the road. Nowadays, the road still serves as the main transportation infrastructure in northern Java.
@@ -18,23 +17,12 @@ It is interesting to see how is the current condition of the road. Unfortunately
 The idea of the project is to walk through this historical road and to see the current condition of the road. Thanks to Google, we can make use of its Streetview service to provide the images. The journey starts from 'Tugu nol kilometer' in Anyer, and finishes at 'Monumen 1000 km' at Panarukan. The image is taken for every 1 km, and posted in Twitter. Updates are provided four times a day, hence it would take approximately 8-9 months to finish.
 
 To keep updated with the progress, please follow [@Jalan_Daendels](https://twitter.com/Jalan_Daendels)
-=======
-(Inspired from @EarthRoverBot project, http://muffinlabs.com/rover/)
 
-follow on Twitter: @Jalan_Daendels
-
-Background:
-TBA
->>>>>>> e749d779a7003880cccf5088d6a1d51a58b5a740
-
-Description:
-The bot walks through the great post road from Anyer to Panarukan, traversing more than 1000 km. The bot uploads the image of the street per 1 km, together with the corresponding address and coordinate.
-
-Files:
+**Files**
 - get_coordinates.py: to generate the route
 - do_tweet.py: to 'move' the bot and to tweet the streetview image
 - route.py: major coordinates of the route, used as the guideline
 - secrets.py: credentials for google and twitter APIs
 
 
-[route_wikipedia]: https://en.wikipedia.org/wiki/Great_Post_Road#/media/File:Java_Great_Post_Road.svg "The great post road"
+[route_wikipedia]: https://upload.wikimedia.org/wikipedia/commons/f/f7/Java_Great_Post_Road.svg "The great post road"
