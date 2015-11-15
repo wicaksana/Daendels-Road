@@ -1,6 +1,7 @@
 # Daendels-Road
 ## A Twitter bot to walk through the great post road in Java island
 
+<<<<<<< HEAD
 (Inspired by @EarthRoverBot project, http://muffinlabs.com/rover/)
 
 follow on Twitter: [@Jalan_Daendels](https://twitter.com/Jalan_Daendels)
@@ -17,6 +18,17 @@ It is interesting to see how is the current condition of the road. Unfortunately
 The idea of the project is to walk through this historical road and to see the current condition of the road. Thanks to Google, we can make use of its Streetview service to provide the images. The journey starts from 'Tugu nol kilometer' in Anyer, and finishes at 'Monumen 1000 km' at Panarukan. The image is taken for every 1 km, and posted in Twitter. Updates are provided four times a day, hence it would take approximately 8-9 months to finish.
 
 To keep updated with the progress, please follow [@Jalan_Daendels](https://twitter.com/Jalan_Daendels)
+=======
+(Inspired from @EarthRoverBot project, http://muffinlabs.com/rover/)
+
+follow on Twitter: @Jalan_Daendels
+
+Background:
+TBA
+>>>>>>> e749d779a7003880cccf5088d6a1d51a58b5a740
+
+Description:
+The bot walks through the great post road from Anyer to Panarukan, traversing more than 1000 km. The bot uploads the image of the street per 1 km, together with the corresponding address and coordinate.
 
 Files:
 - get_coordinates.py: to generate the route
