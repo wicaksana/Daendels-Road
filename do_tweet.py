@@ -4,15 +4,14 @@ import math
 import csv
 import tweepy
 import googlemaps
-from pprint import pprint
 from urllib.request import urlretrieve
 
-__author__ = 'arif'
+__author__ = 'arif (arif@belalangtempur.com)'
 
 
 def post_tweet(coord, img):
     """
-    tweet the streetview image, and the current coordinate as well
+    tweet the streetview image, the address, and the current coordinate as well
     :return:
     """
     auth = tweepy.OAuthHandler(secrets.consumer_key, secrets.consumer_secret)
@@ -81,44 +80,41 @@ if __name__ == "__main__":
     temp_csv = 'coordinates_temp.csv'
     before_current_coord = []  # need this to calculate heading
     current_coord = []
-    distance = 0
+    distance = 0             # distance counter: to determine the streetview location until reaching approximately 1 km,
+
     with open(orig_csv) as f, open(temp_csv, 'w') as tf:
         coord_reader = csv.reader(f, delimiter=',')
         coord_writer = csv.writer(tf, delimiter=',')
-        # count the rows
-        while distance < 1:  # for each 1 km
+        # traverse through coordinates until the accumulating distance reach ~1 km
+        while distance < 1:
             try:
                 temp = next(coord_reader)
                 distance += float(temp[2])
 
-                if not current_coord:  # initially, when current_point is still empty, right_before == current_point
+                if not current_coord:  # initially, when current_point is still empty, before_current == current_point
                     before_current_coord = [float(temp[0]), float(temp[1])]
                 else:                  # else, right_before equals to the old current_point
                     before_current_coord = current_coord
 
                 current_coord = [float(temp[0]), float(temp[1])]
-            except StopIteration: # end of csv file
+            except StopIteration:  # end of csv file
                 continue
-        # then, print the rest of the .csv file to temp file, if any
+        # then, print the rest of the .csv file (if any) to temp file
         for line in coord_reader:
             coord_writer.writerow(line)
-
-    print('right_before: {},{}'.format(before_current_coord[0], before_current_coord[1]))
-    print('current point: {}, {}'.format(current_coord[0], current_coord[1]))
 
     # now, replace the original .csv with the temp .csv file
     os.remove(orig_csv)
     os.rename(temp_csv, orig_csv)
 
+    # get the heading angle (compass bearing) in order to take the correct streetview image
     heading = get_bearing(tuple(before_current_coord), tuple(current_coord))
-    print('bearing: {}'.format(heading))
 
-    # get streetview image of current coordinate
+    # get streetview image of the current coordinate
     img_file = get_image(tuple(current_coord), heading)
-
 
     # tweet it
     post_tweet(tuple(current_coord), img_file)
 
-    # clean up
+    # clean up the image file
     os.remove(img_file)

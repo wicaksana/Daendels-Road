@@ -3,8 +3,6 @@ __author__ = 'arif'
 routes = [
     "-6.0710532,105.8852036",   # Anyer,                    monumen nol kilometer
     "-6.0118498,106.0434947",   # cilegon,                  simpang tiga
-        # "Banten",
-        # "Serang",                 jl. bojonegara
     "-6.228818, 106.431037",    # Balaraja,                 jl. Raya Serang #1
     "-6.191435, 106.462712",    # Balaraja                  jl. Raya Serang #2
     "-6.211021, 106.483400",    # Tangerang, Cikupa         jl. Raya Serang
@@ -49,22 +47,26 @@ routes = [
     "-6.811958, 110.852221",    # Kudus
     "-6.753704, 111.040976",    # Pati
     "-6.894216, 112.065451",    # Tuban
-    "-6.984453, 112.551170",    # Gresik,                   Sidayu
-    "-7.150557, 112.644447",    # Gresik,                   City
-        # "Gresik",
-        # "Surabaya",
-        # "Wonokromo",
-        # "Waru",
-        # "Sidoarjo",
-        # "Porong",
-        # "Gempol",
-        # "Bangil",
-        # "Pasuruan",
-        # "Probolinggo",
-        # "Kraksaan",
-        # "Paiton",
-        # "Besuki",
-        # "Pasir Putih",
-        # "Panarukan",
-        # "Situbondo"
+    "-6.984453, 112.551170",    # Gresik,                   Jl. Tuban-Gresik, Sidayu
+    "-7.150557, 112.644447",    # Gresik,                   Jl. Gubernur Suryo
+    "-7.179770, 112.650034",    # Gresik                    Jl. Veteran
+    "-7.229543, 112.700237",    # Surabaya                  Jl. Kalianak
+    "-7.234443, 112.731137",    # Surabaya                  Jl. Rajawali
+    "-7.236754, 112.737978",    # Surabaya                  Jl. Jembatan Merah, Jl. Veteran
+    "-7.249339, 112.737772",    # Surabaya                  Jl. Pahlawan
+    "-7.259167, 112.738777",    # Surabaya                  Jl. Gemblongan, Jl. Tunjungan
+    "-7.271878, 112.741695",    # Surabaya                  Jl. Basuki Rahmat
+    "-7.274197, 112.743433",    # Surabaya                  Jl. Keputran
+    "-7.283600, 112.746125",    # Surabaya                  Jl. Raya Dinoyo
+    "-7.294366, 112.740914",    # Surabaya                  Jl. Darmokali
+    "-7.303277, 112.736752",    # Surabaya                  Jl. Raya Wonokoromo
+    "-7.326986, 112.731720",    # Surabaya                  Jl. Ahmad Yani
+    "-7.438602, 112.720580",    # Sidoarjo                  Jl. Jenggolo, Porong
+    "-7.595421, 112.769060",    # Bangil                    Jl. Pantura
+    "-7.638728, 112.908431",    # Pasuruan                  Jl. Pantura
+    "-7.753541, 113.209380",    # Probolinggo               Jl. Panglima Sudirman
+    "-7.758197, 113.433016",    # Probolinggo               Kraksaan (jl. Panglima Sudirman)
+    "-7.732715, 113.699628",    # Situbondo                 Jl. Raya Pasir Putih, Besuki
+    "-7.684720, 113.866378",    # Situbondo                 Jl. Raya Pasir Putih, Pasir Putih (Bungatan)
+    "-7.6985305,113.9491273"    # Situbondo                 Panarukan, the (allegedly) end point of the route
 ]
