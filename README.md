@@ -2,8 +2,11 @@
 
 follow on Twitter: @Jalan_Daendels
 
-Description:
+Background:
 TBA
+
+Description:
+The bot walks through the great post road from Anyer to Panarukan, traversing more than 1000 km. The bot uploads the image of the street per 1 km, together with the corresponding address and coordinate.
 
 Files:
 - get_coordinates.py: to generate the route
