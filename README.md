@@ -20,10 +20,10 @@ The idea of the project is to walk through this historical road and to see the c
 To keep updated with the progress, please follow [@Jalan_Daendels](https://twitter.com/Jalan_Daendels)
 
 **Files**
-- get_coordinates.py: to generate the route
-- do_tweet.py: to 'move' the bot and to tweet the streetview image
-- route.py: major coordinates of the route, used as the guideline
-- secrets.py: credentials for google and twitter APIs
+- [get_coordinates.py](https://github.com/wicaksana/Daendels-Road/blob/master/get_coordinates.py): to generate the route
+- [do_tweet.py](https://github.com/wicaksana/Daendels-Road/blob/master/do_tweet.py): to 'move' the bot and to tweet the streetview image
+- [route.py](https://github.com/wicaksana/Daendels-Road/blob/master/route.py): major coordinates of the route, used as the guideline
+- [secrets.py](https://github.com/wicaksana/Daendels-Road/blob/master/secrets.py): credentials for google and twitter APIs
 
 
 [route_wikipedia]: https://upload.wikimedia.org/wikipedia/commons/f/f7/Java_Great_Post_Road.svg "The great post road"
